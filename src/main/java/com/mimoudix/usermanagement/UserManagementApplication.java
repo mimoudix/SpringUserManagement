@@ -23,6 +23,10 @@ public class UserManagementApplication {
             userRepository.save(new User(null, "Mohamed", new Date(), false, 12));
             userRepository.save(new User(null, "Adam", new Date(), false, 12));
             userRepository.save(new User(null, "Mohcine", new Date(), false, 12));
+            userRepository.save(new User(null, "Ahmed", new Date(), false, 12));
+            userRepository.save(new User(null, "Ali", new Date(), false, 12));
+            userRepository.save(new User(null, "Oussama", new Date(), false, 12));
+            userRepository.save(new User(null, "Hamza", new Date(), false, 12));
             userRepository.findAll().forEach(p -> {
                 System.out.println(p.getName());
             });
